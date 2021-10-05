@@ -1,0 +1,6 @@
+<app-cabecalho></app-cabecalho>
+<main>
+    <app-aluno-inserir (alunoAdicionado)="onAlunoAdicionado($event)">
+    </app-aluno-inserir>
+    <app-aluno-lista [alunos]="alunos"></app-aluno-lista>
+</main>

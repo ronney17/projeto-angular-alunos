@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-form-field>
+        <input type="text" matInput placeholder="Nome" [(ngModel)]="nome" />
+    </mat-form-field>
+
+    <mat-form-field>
+        <input type="text" matInput placeholder="RA" [(ngModel)]="ra" />
+    </mat-form-field>
+
+    <mat-form-field>
+        <input type="text" matInput placeholder="Fone" [(ngModel)]="fone" />
+    </mat-form-field>
+
+    <mat-form-field>
+        <input type="text" matInput placeholder="E-mail" [(ngModel)]="email" />
+    </mat-form-field>
+
+    <button color="warn" mat-raised-button (click)="onAdicionarAluno()">
+        Cadastrar Aluno
+    </button>
+</mat-card>

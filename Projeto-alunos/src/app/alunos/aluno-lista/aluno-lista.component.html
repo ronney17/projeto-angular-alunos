@@ -1,0 +1,14 @@
+<mat-accordion *ngIf="alunos.length > 0">
+    <mat-expansion-panel *ngFor="let aluno of alunos">
+        <mat-expansion-panel-header>
+            Nome: {{aluno.nome}}
+        </mat-expansion-panel-header>
+        <p>Fone: {{aluno.fone}}</p>
+        <hr>
+        <p>RA: {{aluno.ra}}</p>
+        <hr>
+        <p>E-mail: {{aluno.email}}</p>
+    </mat-expansion-panel>
+</mat-accordion>
+<p class="mat-body-1" style="text-align: center; color:blueviolet;" *ngIf="alunos.length == 0">Não há alunos cadastrados
+</p>
